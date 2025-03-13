@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+    background: url('../img/Papel_De_Parede.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-tabs .nav-link {
+    border-radius: 30px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+button {
+    border-radius: 30px;
+}
