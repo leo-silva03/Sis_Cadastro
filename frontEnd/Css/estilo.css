@@ -25,3 +25,31 @@ body {
 button {
     border-radius: 30px;
 }
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: 0;
+}
+
+.form-control {
+    border-left: 0;
+}
