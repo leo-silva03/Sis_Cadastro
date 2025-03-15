@@ -13,3 +13,27 @@ A API foi construída utilizando Node.js, Express e MongoDB, garantindo um desem
 
 Feito por leo-silva03 💻🚀
 
+------------------------------
+
+🚀 Instalação e Execução
+
+  1️⃣ Clone o repositório
+
+git clone https://github.com/leo-silva03/Sis_Cadastro.git
+cd Sis_Cadastro
+
+
+  2️⃣ Instale as dependências
+  
+npm install
+
+  3️⃣ Configuração do Banco de Dados
+  
+Certifique-se de ter o MongoDB instalado e rodando localmente ou use um serviço como o MongoDB Atlas.
+No arquivo .env, adicione a string de conexão:
+MONGO_URI=sua_string_de_conexao
+
+  4️⃣ Execute o servidor
+
+npm run dev
+O servidor estará disponível em http://localhost:3000
