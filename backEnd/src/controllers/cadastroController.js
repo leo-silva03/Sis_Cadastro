@@ -5,6 +5,12 @@ class cadastroController {
     // Criar um novo cadastro
     static async criarCadastro(req, res) {
         try {
+            const { Email } = req.body;
+            const cadastroExistente = await informacoes.findOne({ Email });
+            if (cadastroExistente) {
+                return res.status(400).send({ message: "E-mail já registrado." });
+            }
+
             const novaInformacao = new informacoes(req.body);
             await novaInformacao.save();
             res.status(201).send({ message: "Usuário cadastrado com sucesso!" });
@@ -27,6 +33,21 @@ class cadastroController {
     static async buscarCadastroPorId(req, res) {
         try {
             const cadastro = await informacoes.findById(req.params.id);
+            if (cadastro) {
+                res.status(200).json(cadastro);
+            } else {
+                res.status(404).send({ message: "Cadastro não encontrado." });
+            }
+        } catch (error) {
+            res.status(500).send({ message: "Erro ao buscar cadastro.", error });
+        }
+    }
+
+    // Buscar um cadastro por e-mail
+    static async buscarCadastroPorEmail(req, res) {
+        try {
+            const email = req.params.email;
+            const cadastro = await informacoes.findOne({ Email: email });
             if (cadastro) {
                 res.status(200).json(cadastro);
             } else {
