@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2575fc;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+.btn-primary {
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1a5bbf;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste dos ícones */
+.input-group-text {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    color: #2575fc;
+    font-size: 1.2rem;
+}
